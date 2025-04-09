@@ -1,0 +1,33 @@
+{
+  "name": "@vanekt/rendero-examples",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "author": "vanekt",
+  "license": "MIT",
+  "description": "Rendero UI Library Examples",
+  "dependencies": {
+    "@vanekt/rendero-core": "workspace:*"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "solid-js": "^1.9.5",
+    "svelte": "^5.25.7",
+    "vite": "^6.2.3",
+    "vite-plugin-solid": "^2.11.6",
+    "vue": "^3.5.13"
+  },
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite --open",
+    "format": "prettier --write 'src/**/*.{js,jsx}'",
+    "lint": "eslint src"
+  },
+  "files": [
+    "dist"
+  ]
+}

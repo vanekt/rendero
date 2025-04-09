@@ -1,0 +1,33 @@
+{
+  "name": "@vanekt/rendero",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "type": "module",
+  "author": "vanekt",
+  "license": "MIT",
+  "description": "Rendero UI Library",
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.14",
+    "eslint": "^9.24.0",
+    "globals": "^16.0.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "prettier": "^3.5.3",
+    "ts-jest": "^29.3.1",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.29.1"
+  },
+  "scripts": {
+    "build": "pnpm --filter rendero-core build",
+    "format": "prettier --write 'src/**/*.{js,jsx}'",
+    "lint": "eslint packages",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --env=jsdom",
+    "dev": "pnpm --filter rendero-examples dev",
+    "build:examples": "pnpm --filter rendero-examples build"
+  },
+  "packageManager": "pnpm@10.8.0"
+}
