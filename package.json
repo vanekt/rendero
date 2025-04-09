@@ -22,12 +22,12 @@
     "typescript-eslint": "^8.29.1"
   },
   "scripts": {
-    "build": "pnpm --filter rendero-core build",
+    "build:core": "pnpm --filter rendero-core build",
+    "release:core": "pnpm --filter rendero-core release",
     "format": "prettier --write 'src/**/*.{js,jsx}'",
     "lint": "eslint packages",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --env=jsdom",
-    "dev": "pnpm --filter rendero-examples dev",
-    "build:examples": "pnpm --filter rendero-examples build"
+    "test": "jest --env=jsdom",
+    "dev": "pnpm --filter rendero-examples dev"
   },
   "packageManager": "pnpm@10.8.0"
 }

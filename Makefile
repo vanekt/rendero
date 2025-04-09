@@ -1,5 +1,5 @@
-clean:
-	rm -rf ./dist
+install:
+	pnpm install
 
 lint:
 	pnpm lint
@@ -8,15 +8,10 @@ test:
 	pnpm test
 
 build:
-	pnpm build
+	pnpm build:core
 
-publish:
-	pnpm publish --access public
-
-release: clean lint test build publish
-
-install:
-	pnpm install
+release: 
+	pnpm release:core
 
 dev:
 	pnpm dev
