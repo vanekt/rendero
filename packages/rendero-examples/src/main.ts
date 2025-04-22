@@ -1,3 +1,4 @@
+import "modern-normalize";
 import { Case } from "./types";
 import { buildNavigation, renderCase } from "./helpers";
 import { example as vanillaExample } from "./modules/vanilla";

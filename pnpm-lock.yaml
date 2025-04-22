@@ -53,16 +53,12 @@ importers:
       '@vanekt/rendero-core':
         specifier: workspace:*
         version: link:../rendero-core
-    devDependencies:
-      '@sveltejs/vite-plugin-svelte':
-        specifier: ^5.0.3
-        version: 5.0.3(svelte@5.25.9)(vite@6.2.5(@types/node@22.14.0)(terser@5.39.0))
-      '@types/react':
-        specifier: ^19.1.0
-        version: 19.1.0
-      '@types/react-dom':
-        specifier: ^19.1.1
-        version: 19.1.2(@types/react@19.1.0)
+      '@vanekt/rendero-react':
+        specifier: workspace:*
+        version: link:../rendero-react
+      modern-normalize:
+        specifier: ^3.0.1
+        version: 3.0.1
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -78,12 +74,38 @@ importers:
       vite:
         specifier: ^6.2.3
         version: 6.2.5(@types/node@22.14.0)(terser@5.39.0)
-      vite-plugin-solid:
-        specifier: ^2.11.6
-        version: 2.11.6(solid-js@1.9.5)(vite@6.2.5(@types/node@22.14.0)(terser@5.39.0))
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.8.3)
+    devDependencies:
+      '@sveltejs/vite-plugin-svelte':
+        specifier: ^5.0.3
+        version: 5.0.3(svelte@5.25.9)(vite@6.2.5(@types/node@22.14.0)(terser@5.39.0))
+      '@types/react':
+        specifier: ^19.1.0
+        version: 19.1.0
+      '@types/react-dom':
+        specifier: ^19.1.1
+        version: 19.1.2(@types/react@19.1.0)
+      vite-plugin-solid:
+        specifier: ^2.11.6
+        version: 2.11.6(solid-js@1.9.5)(vite@6.2.5(@types/node@22.14.0)(terser@5.39.0))
+
+  packages/rendero-react:
+    dependencies:
+      '@vanekt/rendero-core':
+        specifier: workspace:*
+        version: link:../rendero-core
+      react:
+        specifier: ^19.1.0
+        version: 19.1.0
+    devDependencies:
+      '@types/react':
+        specifier: ^19.1.0
+        version: 19.1.0
+      microbundle:
+        specifier: ^0.15.1
+        version: 0.15.1(@types/babel__core@7.20.5)
 
 packages:
 
@@ -2758,6 +2780,10 @@ packages:
   minimatch@9.0.5:
     resolution: {integrity: sha512-G6T0ZX48xgozx7587koeX9Ys2NYy6Gmv//P89sEte9V9whIapMNF4idKxnW2QtCcLiTWlb/wfCabAtAFWhhBow==}
     engines: {node: '>=16 || 14 >=14.17'}
+
+  modern-normalize@3.0.1:
+    resolution: {integrity: sha512-VqlMdYi59Uch6fnUPxnpijWUQe+TW6zeWCvyr6Mb7JibheHzSuAAoJi2c71ZwIaWKpECpGpYHoaaBp6rBRr+/g==}
+    engines: {node: '>=6'}
 
   mri@1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
@@ -7186,6 +7212,8 @@ snapshots:
   minimatch@9.0.5:
     dependencies:
       brace-expansion: 2.0.1
+
+  modern-normalize@3.0.1: {}
 
   mri@1.2.0: {}
 

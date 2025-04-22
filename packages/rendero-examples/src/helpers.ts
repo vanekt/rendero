@@ -12,10 +12,13 @@ function createNavLink(title: string, idx: string, active: boolean) {
   attr.value = `?case=${idx}`;
   node.setAttributeNode(attr);
 
-  node.style.color = "#000000";
-  node.style.opacity = "0.75";
+  node.style.color = "black";
+  node.style.backgroundColor = "white";
+  node.style.padding = "10px 20px";
+  node.style.textDecoration = "none";
+  node.style.opacity = "1";
   if (active) {
-    node.style.fontWeight = "bold";
+    node.style.outline = "2px solid black";
   }
 
   node.innerText = title;
@@ -26,8 +29,11 @@ function createNavLink(title: string, idx: string, active: boolean) {
 export function buildNavigation(index: string | null, cases: Case[]) {
   const navElement = document.createElement("div");
   navElement.style.display = "flex";
+  navElement.style.alignItems = "center";
   navElement.style.gap = "10px";
-  navElement.style.paddingBottom = "20px";
+  navElement.style.padding = "10px";
+  navElement.style.marginBottom = "10px";
+  navElement.style.backgroundColor = "skyblue";
 
   cases.forEach((item) => {
     const link = createNavLink(item.title, item.index, item.index === index);

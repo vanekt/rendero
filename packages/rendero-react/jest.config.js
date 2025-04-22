@@ -5,6 +5,6 @@ export default {
     "^.+.tsx?$": ["ts-jest", {}],
   },
   moduleNameMapper: {
-    "^@vanekt/rendero-core$": "<rootDir>/packages/rendero-core/src",
+    "^@vanekt/rendero-core$": "<rootDir>/../rendero-core/src",
   },
 };

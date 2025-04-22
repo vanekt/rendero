@@ -1,7 +1,7 @@
 {
-  "name": "@vanekt/rendero-core",
+  "name": "@vanekt/rendero-react",
   "type": "module",
-  "version": "2.0.0",
+  "version": "2.0.0-rc",
   "repository": {
     "type": "git",
     "url": "https://github.com/vanekt/rendero.git"
@@ -9,7 +9,8 @@
   "author": "vanekt",
   "license": "MIT",
   "devDependencies": {
-    "microbundle": "^0.15.1"
+    "microbundle": "^0.15.1",
+    "@types/react": "^19.1.0"
   },
   "source": "src/index.ts",
   "main": "dist/index.js",
@@ -27,6 +28,10 @@
     "lint": "eslint src",
     "test": "jest --env=jsdom",
     "release": "make release"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "@vanekt/rendero-core": "workspace:*"
   },
   "description": "",
   "files": [

@@ -7,11 +7,19 @@ lint:
 test:
 	pnpm test
 
-build:
+build-core:
 	pnpm build:core
 
-release: 
+build-react:
+	pnpm build:react
+
+build: build-core build-react
+
+release-core: 
 	pnpm release:core
+
+release-react: 
+	pnpm release:react
 
 dev:
 	pnpm dev

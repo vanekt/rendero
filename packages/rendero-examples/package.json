@@ -7,19 +7,21 @@
   "license": "MIT",
   "description": "Rendero UI Library Examples",
   "dependencies": {
-    "@vanekt/rendero-core": "workspace:*"
-  },
-  "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^5.0.3",
-    "@types/react": "^19.1.0",
-    "@types/react-dom": "^19.1.1",
+    "@vanekt/rendero-core": "workspace:*",
+    "@vanekt/rendero-react": "workspace:*",
+    "modern-normalize": "^3.0.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "solid-js": "^1.9.5",
     "svelte": "^5.25.7",
     "vite": "^6.2.3",
-    "vite-plugin-solid": "^2.11.6",
     "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.1",
+    "vite-plugin-solid": "^2.11.6"
   },
   "scripts": {
     "build": "vite build",

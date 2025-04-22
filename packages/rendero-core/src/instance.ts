@@ -54,12 +54,16 @@ export function createInstance<L>(...modules: Module<L>[]): Instance<L> {
     let children: RenderFunctionResult<L>[] = [];
 
     const renderChildren: RenderChildrenFunction<L> = (extraVars = {}) => {
+      children.length = 0; // clean children
+
       if (!Array.isArray(nodeChildren)) {
         return [];
       }
 
-      children = nodeChildren.map((child, idx) =>
-        render({ ...child, key: idx }, { ...renderVars, ...extraVars }),
+      children.push(
+        ...nodeChildren.map((child, idx) =>
+          render({ ...child, key: idx }, { ...renderVars, ...extraVars }),
+        ),
       );
 
       return children.map((child) => child.layout);
