@@ -144,7 +144,7 @@ As a result, we will get the following HTML markup:
 
 You don’t have to start from scratch—there are already some ready-made modules you can use:
 
-- [**rendero-react**](https://github.com/vanekt/rendero-react) – A module adapted for React. It’s still incomplete, but you can check out its implementation and use it as a base for your own module.
+- [**rendero-react**](https://github.com/vanekt/rendero/tree/main/packages/rendero-react) – A module adapted for React. It’s still incomplete, but you can check out its implementation and use it as a base for your own module.
 - [**rendero-screen**](https://github.com/vanekt/rendero-screen) – A set of components for loading and rendering JSON markup from a remote source.
 - [**rendero-react-router**](https://github.com/vanekt/rendero-react-router) – A mapper for rendering `react-router v5` components (**deprecated**).
 
