@@ -1,4 +1,4 @@
-# Rendero UI Library [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/vanekt/rendero/blob/main/LICENSE) ![npm version](https://img.shields.io/npm/v/@vanekt/rendero-core)
+# Rendero UI Library [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/vanekt/rendero/blob/main/LICENSE) ![npm version](https://img.shields.io/npm/v/@vanekt/rendero-core) [![Release](https://github.com/vanekt/rendero/actions/workflows/release.yml/badge.svg)](https://github.com/vanekt/rendero/actions/workflows/release.yml) 
 
 A library for dynamic UI rendering based on mappers and JSON markup. It allows updating the UI without redeploying the frontend, making customization fast and flexible.
 
