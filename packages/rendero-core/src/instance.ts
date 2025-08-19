@@ -51,7 +51,7 @@ export function createInstance<L>(...modules: Module<L>[]): Instance<L> {
       throw new Error(`Wrong node type: ${module}:${type}`);
     }
 
-    let children: RenderFunctionResult<L>[] = [];
+    const children: RenderFunctionResult<L>[] = [];
 
     const renderChildren: RenderChildrenFunction<L> = (extraVars = {}) => {
       children.length = 0; // clean children

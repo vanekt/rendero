@@ -31,5 +31,10 @@
   "description": "",
   "files": [
     "dist"
-  ]
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public",
+    "tagVersionPrefix": "core-v"
+  }
 }
